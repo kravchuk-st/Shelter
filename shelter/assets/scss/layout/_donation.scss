@@ -1,0 +1,61 @@
+.in-addition__content{
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.in-addition__subtitle{
+  margin: 20px 0 19px;
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+  color: $color-text;
+}
+
+.in-addition__through{
+  margin-top: 20px;
+  max-width: 380px;
+  font-family: "Arial Italic", sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #b2b2b2;
+}
+
+@media (max-width: 991px) {
+  .in-addition__content{
+    flex-direction: column-reverse;
+    row-gap: 60px;
+  }
+}
+
+@media (max-width: 575px) {
+  section.in-addition{
+    padding-bottom: 37px;
+  }
+
+  .in-addition__content {
+    row-gap: 42px;
+  }
+
+  .in-addition__content > img{
+    width: 86.67%;
+    max-width: 505px;
+  }
+
+  .in-addition__subtitle{
+    line-height: 1.6;
+    letter-spacing: 0;
+  }
+
+  .in-addition__through{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+  }
+}
