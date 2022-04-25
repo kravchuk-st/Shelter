@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shelter</title>
+  <link rel="shortcut icon" type="image/ico" href="../assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/modal.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/update.css">
+</head>
+<body>
+  <header class="header fix-block">
+    <div class="wrapper">
+      <div class="header__content">
+        <div class="logo">
+          <a class="logo__link text-left" href="../">
+              <h3 class="logo__title">Cozy House</h3>
+              <p class="logo__subtitle">Shelter for pets in Boston</p>
+          </a>
+        </div>
+        <div class="backdrop"></div>
+        <nav class="nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item"><a class="nav__link" href="../">About the shelter</a></li>
+            <li class="nav__item active"><a class="nav__link active" href="./">Our pets</a></li>
+            <li class="nav__item"><a class="nav__link" href="../#help">Help the shelter</a></li>
+            <li class="nav__item"><a class="nav__link" href="#footer">Contacts</a></li>
+          </ul>
+        </nav>
+        <button class="burger btn btn-reset" id="burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+        <a class="nav-logo" href="../">
+          <h3 class="logo__title">Cozy House</h3>
+          <p class="logo__subtitle">Shelter for pets in Boston</p>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="our-friends" id="friends">
+      <div class="wrapper">
+        <h1>Our friends who <br> are looking for a house</h1>
+        <div class="slider">
+          <!-- <div class="card" data-graph-path="data-modal" data-id="0">
+            <div class="card__img">
+              <img src="../assets/img/slider/0.jpg" alt="Slider image">
+            </div>
+            <h4>Katrine</h4>
+            <button class="slider-btn btn btn-reset" type="button" data-id="0">Learn more</button>
+          </div>
+          <div class="card" data-graph-path="data-modal" data-id="1">
+            <div class="card__img">
+              <img src="../assets/img/slider/1.jpg" alt="Slider image">
+            </div>
+            <h4>Jennifer</h4>
+            <button class="slider-btn btn btn-reset" type="button" data-id="1">Learn more</button>
+          </div>
+          <div class="card" data-graph-path="data-modal" data-id="2">
+            <div class="card__img">
+              <img src="../assets/img/slider/2.jpg" alt="Slider image">
+            </div>
+            <h4>Woody</h4>
+            <button class="slider-btn btn btn-reset" type="button" data-id="2">Learn more</button>
+          </div>
+          <div class="card card-md" data-graph-path="data-modal" data-id="3">
+            <div class="card__img">
+              <img src="../assets/img/slider/3.jpg" alt="Slider image">
+            </div>
+            <h4>Sophia</h4>
+            <button class="slider-btn btn btn-reset" type="button" data-id="3">Learn more</button>
+          </div>
+          <div class="card card-md" data-graph-path="data-modal" data-id="4">
+            <div class="card__img">
+              <img src="../assets/img/slider/4.jpg" alt="Slider image">
+            </div>
+            <h4>Timmy</h4>
+            <button class="slider-btn btn btn-reset" type="button" data-id="4">Learn more</button>
+          </div>
+          <div class="card card-md" data-graph-path="data-modal" data-id="5">
+            <div class="card__img">
+              <img src="../assets/img/slider/5.jpg" alt="Slider image">
+            </div>
+            <h4>Charly</h4>
+            <button class="slider-btn btn btn-reset" type="button" data-id="5">Learn more</button>
+          </div>
+          <div class="card card-lg" data-graph-path="data-modal" data-id="6">
+            <div class="card__img">
+              <img src="../assets/img/slider/6.jpg" alt="Slider image">
+            </div>
+            <h4>Scarlett</h4>
+            <button class="slider-btn btn btn-reset" type="button" data-id="6">Learn more</button>
+          </div>
+          <div class="card card-lg" data-graph-path="data-modal" data-id="7">
+            <div class="card__img">
+              <img src="../assets/img/slider/7.jpg" alt="Slider image">
+            </div>
+            <h4>Freddie</h4>
+            <button class="slider-btn btn btn-reset" type="button" data-id="7">Learn more</button>
+          </div> -->
+        </div>
+        <div class="slider-nav">
+          <button class="arrow-pagin first-item active">
+            <svg class="icon">
+              <use xlink:href="../assets/img/svg/first.svg#first"></use>
+            </svg>
+          </button>
+          <button class="arrow-pagin left-item active">
+            <svg class="icon">
+              <use xlink:href="../assets/img/svg/left.svg#left"></use>
+            </svg>
+          </button>
+          <button class="arrow-pagin page-number">1</button>
+          <button class="arrow-pagin right-item active">
+            <svg class="icon">
+              <use xlink:href="../assets/img/svg/left.svg#left"></use>
+            </svg>
+          </button>
+          <button class="arrow-pagin last-item active">
+            <svg class="icon">
+              <use xlink:href="../assets/img/svg/first.svg#first"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="wrapper">
+      <div class="footer__content">
+        <div class="footer__left text-left">
+          <h2>For questions and suggestions</h2>
+          <a href="mailto:email@shelter.com" class="footer__link">
+            <img src="../assets/img/svg/mail.svg" alt="Mail image">
+            <h4>email@shelter.com</h4>
+          </a>
+          <a href="tel:+13 674 567 75 54" class="footer__link">
+            <img src="../assets/img/svg/phone.svg" alt="Phone image">
+            <h4>+13 674 567 75 54</h4>
+          </a>
+        </div>
+        <div class="footer__center text-left">
+          <h2>We are waiting for your visit</h2>
+          <a href="https://goo.gl/maps/H2tqPdDKrPE9BVBM8" target="_blank" class="footer__link">
+            <img src="../assets/img/svg/map.svg" alt="Map image">
+            <h4>1 Central Street, Boston (entrance from the store)</h4>
+          </a>
+          <a href="https://goo.gl/maps/H2tqPdDKrPE9BVBM8" target="_blank" class="footer__link">
+            <img src="../assets/img/svg/map.svg" alt="Map image">
+            <h4>18 South Park, London </h4>
+          </a>
+        </div>
+        <div class="footer__right">
+          <img src="../assets/img/footer-puppy.png" alt="Footer puppy">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="graph-modal modal">
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="data-modal">
+      <button class="btn-reset graph-modal__close js-modal-close modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content">
+        <div class="modal__img">
+          <img src="" alt="modal img">
+        </div>
+        <div class="modal__content">
+          <div class="modal__content-top">
+            <h2 class="modal-title"></h2>
+            <h4 class="modal-subtitle"></h4>
+          </div>
+          <p class="modal-description">
+          </p>
+          <ul class="modal-list">
+            <li class="modal-item">Age: <span class="age"></span></li>
+            <li class="modal-item">Inoculations: <span class="inoculations"></span></li>
+            <li class="modal-item">Diseases: <span class="diseases"></span></li>
+            <li class="modal-item">Parasites: <span class="parasites"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/modal.min.js"></script>
+  <script src="../assets/js/burger.js"></script>
+  <script src="../assets/js/pagination.js"></script>
+  <script src="../assets/js/modal.js"></script>
+  <!-- <script src="../assets/js/app.js"></script> -->
+</body>
+</html>

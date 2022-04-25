@@ -1,0 +1,107 @@
+.modal__close{
+    right: -42px;
+    top: -52px;
+    width: 52px;
+    height: 52px;
+    background-size: 12px, 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid $color-btn;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.graph-modal__container{
+    padding: 0;
+    padding-right: 20px;
+}
+
+.graph-modal__content{
+    display: flex;
+    justify-content: flex-start;
+    row-gap: 29px;
+}
+
+.modal__img{
+    margin-right: 29px;
+    display: block;
+    width: calc(50% + 60px);
+    height: 500px;
+    font-size: 0;
+    line-height: 0;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 9px 0px 0px 9px;
+    }
+}
+
+.modal__content{
+    margin-top: 50px;
+    width: calc(50% - 80px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.modal-subtitle{
+    margin-top: 10px;
+}
+
+.modal-item{
+    font-family: 'Georgia Bold', sans-serif;
+    font-weight: 700;
+
+    span{
+        font-family: 'Georgia', sans-serif;
+        font-weight: 400;
+    }
+}
+
+.modal-list{
+    list-style-position: inside;
+
+    li::marker{
+        color: $color-btn;
+    }
+}
+
+@media (max-width: 991px) {
+    .graph-modal__container {
+        width: 87%;
+    }
+}
+
+@media (max-width: 767px) {
+    .modal__close {
+        right: -34px;
+    }
+
+    .graph-modal__container {
+        width: 75%;
+    }
+
+    .graph-modal__container{
+        padding: 10px;
+    }
+
+    .modal__img{
+        display: none;
+    }
+
+    .modal__content{
+        margin-top: 0;
+        width: 100%;
+        row-gap: 20px;
+    }
+
+    .modal__content-top{
+        text-align: center;
+    }
+
+    .modal-description{
+        text-align: justify;
+    }
+}
