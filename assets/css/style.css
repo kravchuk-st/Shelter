@@ -451,8 +451,8 @@ header {
     padding: 0;
     width: 320px;
     height: 101vh;
-    font-size: 32px;
-    line-height: 1.6;
+    font-size: 0;
+    line-height: 0;
     position: fixed;
     z-index: 12;
     top: 0;
@@ -507,6 +507,14 @@ header {
   .nav__list_open li:nth-child(4) {
     -webkit-transition-delay: 0.7s;
             transition-delay: 0.7s;
+  }
+  .nav__item {
+    font-size: 0;
+    line-height: 0;
+  }
+  .nav__link {
+    font-size: 32px;
+    line-height: 1.6;
   }
 }
 
@@ -1170,12 +1178,8 @@ footer a.footer__link h4 {
   transition: all 0.3s ease-in-out;
 }
 
-.modal__close:hover {
-  background-color: #fddcc4 !important;
-}
-
 .graph-modal:hover .modal__close {
-  background-color: #fddcc4;
+  background-color: #f1cdb3;
 }
 
 .graph-modal__container {
@@ -1185,6 +1189,10 @@ footer a.footer__link h4 {
 
 .graph-modal__container:hover .modal__close {
   background-color: transparent;
+}
+
+.graph-modal .modal__close:hover {
+  background-color: #fddcc4;
 }
 
 .graph-modal__content {
