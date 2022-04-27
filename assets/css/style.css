@@ -1171,7 +1171,7 @@ footer a.footer__link h4 {
 }
 
 .modal__close:hover {
-  background-color: #fddcc4;
+  background-color: #fddcc4 !important;
 }
 
 .graph-modal:hover .modal__close {
