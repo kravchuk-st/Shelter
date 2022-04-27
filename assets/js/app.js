@@ -9,7 +9,7 @@ card_btn.addEventListener('click', (ev) => {
   ev.preventDefault();
 });
 
-fetch('../assets/js/pets.json')
+fetch('./assets/js/pet.json')
 .then((response) => {
   return response.json();
 })
