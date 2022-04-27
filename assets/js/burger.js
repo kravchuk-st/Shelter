@@ -3,7 +3,7 @@ const menu = document.querySelector('.nav__list');
 const backdrop = document.querySelector('.backdrop');
 const logo = document.querySelector('.logo');
 const navLogo = document.querySelector('.nav-logo');
-const links = [...document.querySelectorAll('.nav__item')];
+const links = [...document.querySelectorAll('.nav__link')];
 
 let closeMenu = () => {
   burger.classList.remove('burger_open');
