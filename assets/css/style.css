@@ -1174,9 +1174,17 @@ footer a.footer__link h4 {
   background-color: #fddcc4;
 }
 
+.graph-modal:hover .modal__close {
+  background-color: #fddcc4;
+}
+
 .graph-modal__container {
   padding: 0;
   padding-right: 20px;
+}
+
+.graph-modal__container:hover .modal__close {
+  background-color: transparent;
 }
 
 .graph-modal__content {
